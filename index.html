@@ -4,34 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!-- Иконки Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Главная</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-                <li class="nav-item"><a class="nav-link" href="category.html">Категория</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <h1>Добро пожаловать на наш сайт!</h1>
-        <p>Здесь вы можете найти различные товары.</p>
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Товар 1</h2>
-                <p>$100</p>
-                <p>10 пользователей, 2 ГБ памяти, поддержка по email, доступ в центр помощи.</p>
-                <button class="btn btn-primary">Купить</button>
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <!-- Левая колонка (меню) -->
+            <div class="col-md-2 bg-dark text-light sidebar h-100">
+                <div class="sidebar-header p-3">
+                    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <span class="ms-2">Меню</span>
+                </div>
+                <ul class="nav flex-column p-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">
+                            <i class="bi bi-house-door"></i> Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">
+                            <i class="bi bi-speedometer2"></i> Категории
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">
+                            <i class="bi bi-table"></i> Заказы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">
+                            <i class="bi bi-person-lines-fill"></i> Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-menu p-3 mt-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Пользователь
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Профиль</a></li>
+                            <li><a class="dropdown-item" href="#">Выход</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!-- Повторите для других товаров -->
+
+            <!-- Правая колонка (основное содержимое) -->
+            <div class="col-md-10 bg-light text-dark main-content h-100">
+                <div class="container text-center">
+                    <h1 class="mt-5">Главная</h1>
+                    <p class="text-secondary">Вы находитесь на сайте, предназначенном для продажи товаров.</p>
+
+                    <div class="row mt-5">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Товар 1</h5>
+                                    <p class="card-text">$100</p>
+                                    <p class="card-text">10 книги includes 2 GB of storage, Email support. Help center access</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Товар 2</h5>
+                                    <p class="card-text">$100</p>
+                                    <p class="card-text">10 книги includes 2 GB of storage, Email support. Help center access</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Товар 3</h5>
+                                    <p class="card-text">$100</p>
+                                    <p class="card-text">10 книги includes 3 GB of storage, Email support. Help center access</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Товар 4</h5>
+                                    <p class="card-text">$100</p>
+                                    <p class="card-text">10 книги includes 4 GB of storage, Email support. Help center access</p>
+                                    <a href="#" class="btn btn-primary">Купить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

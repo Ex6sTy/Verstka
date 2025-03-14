@@ -82,6 +82,11 @@ body {
     transform: scale(1.05);
 }
 
+.custom-card-width {
+    width: 80%; /* Уменьшенная ширина карточки */
+    margin: 0 auto; /* Центрирование карточки */
+}
+
 .card-header {
     background-color: #f8f9fa; /* Светлый серый фон */
     color: #000; /* Черный текст */

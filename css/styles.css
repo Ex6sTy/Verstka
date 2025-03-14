@@ -98,18 +98,12 @@ body {
     color: #555;
 }
 
-/* Кнопки */
-.btn-outline-primary {
-    color: #007bff; /* Цвет текста как у рамки */
-    border-color: #007bff; /* Цвет рамки */
-    background-color: transparent; /* Прозрачный фон */
-    padding: 8px 16px; /* Отступы для кнопки */
+.btn-group .btn {
+    margin-right: 5px;
 }
 
-.btn-outline-primary:hover {
-    color: #fff; /* Цвет текста при наведении */
-    background-color: #007bff; /* Цвет фона при наведении */
-    border-color: #007bff; /* Цвет рамки при наведении */
+.text-muted {
+    color: #6c757d !important;
 }
 
 /* Логотип Bootstrap */

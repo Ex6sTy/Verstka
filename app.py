@@ -1,24 +1,14 @@
-from flask import Flask, request
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
-    with open('index.html', 'r', encoding='utf-8') as file:
-        content = file.read()
-    return content, 200, {'Content-Type': 'text/html'}
-
-@app.route('/contacts', methods=['GET'])
-def contacts():
-    with open('contacts.html', 'r', encoding='utf-8') as file:
-        content = file.read()
-    return content, 200, {'Content-Type': 'text/html'}
-
-@app.route('/submit', methods=['POST'])
-def submit():
-    data = request.form
-    print("Полученные данные:", data)
-    return "Данные получены", 200
+    # Читаем HTML-файл
+    with open('templates/contacts2.html', 'r', encoding='utf-8') as file:
+        html_content = file.read()
+    # Возвращаем HTML с правильным Content-Type
+    return html_content, 200, {'Content-Type': 'text/html'}
 
 if __name__ == '__main__':
     app.run(debug=True)

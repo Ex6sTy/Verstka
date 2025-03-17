@@ -1,0 +1,138 @@
+/* Общие стили */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Левая колонка (меню) */
+.sidebar {
+    width: 250px; /* Фиксированная ширина меню */
+    background-color: #343a40; /* Темный фон */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.nav {
+    flex-grow: 1;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-link.active-page {
+    background-color: #007bff; /* Синий фон для активной страницы */
+    border-radius: 5px; /* Скругленные углы */
+    padding: 10px; /* Отступы */
+}
+
+.nav-link:hover {
+    background-color: #495057;
+}
+
+.user-menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.border-bottom {
+    border-color: #6c757d !important; /* Темно-серая линия */
+    margin: 0 15px; /* Не доходит до конца */
+}
+
+/* Правая колонка (основное содержимое) */
+.main-content {
+    flex-grow: 1;
+    background-color: #fff; /* Белый фон */
+    color: #000;
+    padding: 20px;
+    overflow-y: auto; /* Добавляем прокрутку, если контент слишком длинный */
+}
+
+/* Карточки товаров */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.custom-card-width {
+    width: 80%; /* Уменьшенная ширина карточки */
+    margin: 0 auto; /* Центрирование карточки */
+}
+
+.card-header {
+    background-color: #f8f9fa; /* Светлый серый фон */
+    color: #000; /* Черный текст */
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-group .btn {
+    margin-right: 5px;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Логотип Bootstrap */
+.logo {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Выпадающее меню пользователя */
+.dropdown-menu {
+    background-color: #6c757d; /* Светлый фон */
+}
+
+.dropdown-item {
+    color: #fff !important; /* Белый текст */
+}
+
+.dropdown-item:hover {
+    background-color: #495057; /* Темный фон при наведении */
+}

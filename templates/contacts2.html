@@ -69,11 +69,11 @@
             <div class="row mt-5 justify-content-center">
                 <!-- Форма (уменьшенная ширина) -->
                 <div class="col-md-5">
-                    <form>
+                    <form action="/submit" method="post">
                         <!-- Поле для имени -->
                         <div class="mb-3">
                             <label for="name" class="form-label">Имя</label>
-                            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Введите ваше имя">
                         </div>
 
                         <!-- Поле для почты -->
@@ -81,14 +81,14 @@
                             <label for="email" class="form-label">Почта</label>
                             <div class="input-group">
                                 <span class="input-group-text bg-secondary text-white">@</span>
-                                <input type="email" class="form-control" id="email" placeholder="Введите вашу почту">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Введите вашу почту">
                             </div>
                         </div>
 
                         <!-- Поле для сообщения -->
                         <div class="mb-3">
                             <label for="message" class="form-label">Сообщение</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Введите ваше сообщение"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Введите ваше сообщение"></textarea>
                         </div>
 
                         <!-- Кнопка "Отправить" -->
